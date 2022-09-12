@@ -10,7 +10,7 @@
     --primary-white-cl: #ffffff;
     --accent-bg-cl: #2196F3;
     --gray-bg-cl: #2F303A;
-    --section-bg-4: #F5F4FA;
+    --additional-gray-cl: #F5F4FA;
     /* Colors for button */
     --btn-radio-bg: #F5F4FA;
     --text-bt-cl: #ffffff;
@@ -18,6 +18,8 @@
     /* border-bottom */
     --border-bottom-header: #ECECEC;
     --border-div: #EEEEEE;
+    /* network */
+    --network-notact: #AFB1B8;
 }
     
 body {
@@ -67,6 +69,11 @@ img {
     display: block;
 }
 
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 /* ========== header ========== */
 /* LOGO */
 
@@ -88,11 +95,7 @@ img {
     color: var(--logo-footer);
 }
 
-.list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+
 
 .page-header {
     border-bottom: 1px solid var(--border-bottom-header);
@@ -171,13 +174,17 @@ img {
     fill: currentColor;
 }
 
-.contact:hover, 
+.contact:hover,
 .contact:focus {
     color: var(--accent-txt-cl);
 }
+.contact:hover .contacts-icon,
+.contact:focus .contacts-icon {
+    fill: currentColor;
+}
 
 .link.current {
-    color: var(--accent-txt-cl)
+    color: var(--accent-txt-cl);
 }
 
 
@@ -257,6 +264,17 @@ img {
     margin-right: 30px;
 }
 
+.icon-mqs {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 30px;
+    min-height: 120px;
+    border-radius: 4px;
+    background-color: var(--additional-gray-cl);
+}
+
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -285,6 +303,7 @@ img {
 
     margin-bottom: 10px;
 }
+
 /* =========== section-3(work) ================= */
 
 .section-work {
@@ -363,7 +382,7 @@ img {
 
 /* =========== section-team ============ */
 .section-team {
-    background: var(--section-bg-4);
+    background: var(--additional-gray-cl);
 }
 
 .list-team {
@@ -387,8 +406,44 @@ img {
 }
 
 .description-ourteam {
-    padding: 30px;
+    padding: 30px 0 16px 0;
 }
+
+/* ==========social-network======== */
+.social-network {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* .team-network {
+    display: flex;
+    justify-content: center;
+} */
+
+/* .item-network:not(:last-child) {
+    margin-right: 10px;
+}
+
+.member-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--network-notact);
+}
+
+.member-link:hover,
+.member-link:focus {
+    background-color: var(--active-bg-cl);
+}
+
+.icon-network {
+    width: 20px;
+    height: 20px;
+} */
 
 
 /* ================== Portfolio ======================  */
