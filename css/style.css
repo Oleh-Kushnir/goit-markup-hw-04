@@ -416,34 +416,43 @@ img {
     justify-content: center;
 }
 
-/* .team-network {
+.social-link {
     display: flex;
-    justify-content: center;
-} */
-
-/* .item-network:not(:last-child) {
-    margin-right: 10px;
-}
-
-.member-link {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    
     width: 44px;
     height: 44px;
+
     border-radius: 50%;
     color: var(--network-notact);
+    background-color: var(--primary-white-cl);
 }
 
-.member-link:hover,
+
+.social-link:hover, 
+.social-link:focus {
+    color: var(--text-bt-cl); 
+    background-color: var(--accent-bg-cl);
+}
+
+.social-icon {
+    fill: currentColor;
+}
+
+
+
+
+
+
+
+
+
+/* .member-link:hover,
 .member-link:focus {
     background-color: var(--active-bg-cl);
-}
-
-.icon-network {
-    width: 20px;
-    height: 20px;
 } */
+
 
 
 /* ================== Portfolio ======================  */
