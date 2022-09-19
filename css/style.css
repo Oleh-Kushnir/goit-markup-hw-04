@@ -352,6 +352,7 @@ img {
 
 
 .list-link {
+    display: block;
     text-decoration: none;
 }
 
@@ -393,6 +394,7 @@ img {
 .text-ourteam {
     font-size: 16px;
     line-height: 1.18;
+    margin-bottom: 16px;
 }
 
 .worker {
@@ -407,7 +409,7 @@ img {
 }
 
 .description-ourteam {
-    padding: 30px 0 16px 0;
+    padding: 30px;
 }
 
 /* ==========social-network======== */
@@ -415,7 +417,6 @@ img {
     display: flex;
     gap: 10px;
     justify-content: center;
-    margin-bottom: 30px;
 }
 
 .social-link {
@@ -514,11 +515,11 @@ img {
 .button.radio:hover {
     color: var(--text-bt-cl);
     background-color: var(--accent-bg-cl);
-    box-shadow: 0px 3px px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     font-family: inherit
 }
-.item-prj:hover,
-.item-prj:focus {
+.list-link:hover,
+.list-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
